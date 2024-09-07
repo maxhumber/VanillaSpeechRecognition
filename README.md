@@ -8,7 +8,7 @@ This implementation also uses the most modern features of Swift and SwiftUI incl
 
 #### Screenshot
 
-![VSR](Images/VSR.png){height=600}
+![VSR](Images/VSR.png)
 
 #### Comparison
 
