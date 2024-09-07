@@ -6,10 +6,6 @@ It is 100% compatible with Swift 6, Xcode 16, and iOS 18, and does not use any t
 
 This implementation also uses the most modern features of Swift and SwiftUI including: the `@Observable` macro, the `@Entry` ([backported to iOS 13](https://developer.apple.com/documentation/swiftui/entry())) for EnvironmentValues, and [Swift Testing](https://developer.apple.com/xcode/swift-testing/).
 
-#### Screenshot
-
-![VSR](Images/VSR.png)
-
 #### Comparison
 
 | Metric                      | 🍦       | TCA             |
@@ -35,3 +31,6 @@ This implementation also uses the most modern features of Swift and SwiftUI incl
      393 total
 ```
 
+#### Screenshot
+
+![VSR](Images/VSR.png)
