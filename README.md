@@ -1,10 +1,14 @@
 ### 🍦 VanillaSpeechRecognition
 
-This my 1:1 (or, as close as possible) "vanilla" implementation of the [TCA SpeechRecognition](https://github.com/pointfreeco/swift-composable-architecture/tree/main/Examples/SpeechRecognition) app.
+This my 1:1 (or, as close as possible) "vanilla" implementation of the [TCA SpeechRecognition](https://github.com/pointfreeco/swift-composable-architecture/tree/1.14.0/Examples/SpeechRecognition) app (as of 1.14.0).
 
 It is 100% compatible with Swift 6, Xcode 16, and iOS 18, and does not use any third-party dependencies.
 
 This implementation also uses the most modern features of Swift and SwiftUI including: the `@Observable` macro, the `@Entry` ([backported to iOS 13](https://developer.apple.com/documentation/swiftui/entry())) for EnvironmentValues, and [Swift Testing](https://developer.apple.com/xcode/swift-testing/).
+
+#### Screenshot
+
+![VSR](Images/VSR.png){height=600}
 
 #### Comparison
 
