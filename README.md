@@ -1,21 +1,21 @@
 ### 🍦 VanillaSpeechRecognition
 
-This my 1:1 (or, as close as possible) "vanilla" implementation of the [TCA SpeechRecognition](https://github.com/pointfreeco/swift-composable-architecture/tree/1.14.0/Examples/SpeechRecognition) app (as of 1.14.0).
+A 1:1 (or, as close to as possible) "vanilla" implementation of the [TCA SpeechRecognition](https://github.com/pointfreeco/swift-composable-architecture/tree/1.14.0/Examples/SpeechRecognition) app (v1.14.0)
 
 It is 100% compatible with Swift 6, Xcode 16, and iOS 18, and does not use any third-party dependencies.
 
-This implementation also uses the most modern features of Swift and SwiftUI including: the `@Observable` macro, the `@Entry` ([backported to iOS 13](https://developer.apple.com/documentation/swiftui/entry())) for EnvironmentValues, and [Swift Testing](https://developer.apple.com/xcode/swift-testing/).
+This implementation also leverages the most modern features of Swift and SwiftUI including: the `@Observable` macro, `@Entry` ([backported to iOS 13](https://developer.apple.com/documentation/swiftui/entry())) for EnvironmentValues, and [Swift Testing](https://developer.apple.com/xcode/swift-testing/).
 
 #### Comparison
 
 | Metric                      | 🍦       | TCA             |
 | --------------------------- | ------- | --------------- |
-| Lines of Code\*             | 393     | 573             |
-| Build Time "Cold" (seconds) | 1.5     | 41.5            |
-| Build Time "Warm" (seconds) | 0.1     | 0.5             |
 | Dependencies                | 0       | 18              |
 | Warnings                    | 0       | 50              |
+| Build Time "Cold" (seconds) | 1.5     | 41.5            |
+| Build Time "Warm" (seconds) | 0.1     | 0.5             |
 | Indexing Time               | Minimal | Several minutes |
+| Lines of Code\*             | 393     | 573             |
 
 \*Lines of code is calculated by:
 
@@ -33,4 +33,4 @@ This implementation also uses the most modern features of Swift and SwiftUI incl
 
 #### Screenshot
 
-![VSR](Images/VSR.png)
+<img src="Images/VSR.png" alt="VSR" width="200">

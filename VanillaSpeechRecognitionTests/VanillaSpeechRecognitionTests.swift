@@ -1,5 +1,5 @@
 import Testing
-@testable import VanillaSpeech
+@testable import VanillaSpeechRecognition
 
 struct VanillaSpeechTests {
     @Test
@@ -23,7 +23,7 @@ struct VanillaSpeechTests {
         let service = SpeechRecognitionServiceMock(authorization: .authorized, stream: .preview)
         let viewModel = await SpeechRecognitionViewModel()
         await viewModel.handleRecording(using: service)
-        #expect(await viewModel.transcribedText.contains("Lorem ipsum")) // This should evolve as the stream yields results
+        #expect(await viewModel.transcribedText.contains("Lorem ipsum"))
     }
     
     @Test

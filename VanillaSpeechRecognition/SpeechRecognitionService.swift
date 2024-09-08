@@ -38,12 +38,9 @@ actor SpeechRecognitionService: SpeechRecognizing {
             }
             self.recognitionTask = speechRecognizer.recognitionTask(with: request) { result, error in
                 switch (result, error) {
-                case (.some(let result), _):
-                    continuation.yield(SpeechRecognitionResult(result))
-                case (_, .some(let error)):
-                    continuation.finish(throwing: error)
-                case (.none, .none):
-                    fatalError("Unexpected state: No result and no error.")
+                case (.some(let result), _): continuation.yield(SpeechRecognitionResult(result))
+                case (_, .some(let error)): continuation.finish(throwing: error)
+                case (nil, nil): fatalError("Unexpected state: No result and no error.")
                 }
             }
             continuation.onTermination = { [weak self] _ in
@@ -87,9 +84,7 @@ actor SpeechRecognitionServiceMock: SpeechRecognizing {
         stream
     }
     
-    func finishTask() async {
-        //...
-    }
+    func finishTask() async {}
 }
 
 extension SpeechRecognitionStream {
